@@ -1,6 +1,23 @@
-<h2>ITN Live</h2>
+<h2>Live TV</h2>
 
-<iframe width="100%" height="400"
+<button onclick="changeChannel('UC9k-_g7fZLZ1C8fXl5nVgAA')">
+ITN
+</button>
+
+<button onclick="changeChannel('UCpuxv2lN1Xh5g6KxXb9zSog')">
+Sirasa TV
+</button>
+
+<br><br>
+
+<iframe id="player" width="100%" height="400"
 src="https://www.youtube.com/embed/live_stream?channel=UC9k-_g7fZLZ1C8fXl5nVgAA"
 allowfullscreen>
 </iframe>
+
+<script>
+function changeChannel(channelId) {
+document.getElementById("player").src =
+"https://www.youtube.com/embed/live_stream?channel=" + channelId;
+}
+</script>
