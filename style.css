@@ -52,3 +52,40 @@ background: white;
 color: black;
 transform: scale(1.1);
 }
+/* Glass Cards */
+.card {
+background: rgba(255, 255, 255, 0.1);
+border-radius: 20px;
+padding: 30px;
+margin: 20px;
+backdrop-filter: blur(10px);
+box-shadow: 0 0 20px rgba(0,0,0,0.3);
+animation: float 4s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+0% { transform: translateY(0px); }
+50% { transform: translateY(-15px); }
+100% { transform: translateY(0px); }
+}
+
+/* Neon Button */
+.btn {
+display: inline-block;
+margin-top: 15px;
+padding: 12px 25px;
+color: white;
+background: #ff0055;
+border-radius: 30px;
+text-decoration: none;
+box-shadow: 0 0 15px #ff0055;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #00f7ff;
+box-shadow: 0 0 20px #00f7ff;
+transform: scale(1.1);
+}
+
