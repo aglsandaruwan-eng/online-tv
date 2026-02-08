@@ -2,90 +2,104 @@ body {
 margin: 0;
 font-family: Arial, sans-serif;
 color: white;
-text-align: center;
-overflow-x: hidden;
+background: #0d1b2a;
 }
 
-/* Animated Background */
-.bg-animation {
-position: fixed;
+/* HERO */
+.hero {
+height: 100vh;
+background: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070') no-repeat center center/cover;
+position: relative;
+}
+
+.hero::after {
+content: "";
+position: absolute;
 width: 100%;
 height: 100%;
-z-index: -1;
-background: linear-gradient(-45deg, #ff0000, #ff7300, #ff00c8, #0066ff);
-background-size: 400% 400%;
-animation: gradientBG 8s ease infinite;
+background: rgba(0,0,0,0.7);
+top: 0;
+left: 0;
 }
 
-@keyframes gradientBG {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
+.navbar {
+position: relative;
+z-index: 2;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 50px;
 }
 
-/* Logo */
-.logo {
-margin-top: 40px;
-font-size: 35px;
+.navbar ul {
+display: flex;
+list-style: none;
+gap: 20px;
 }
 
-/* Container */
-.home-container {
-margin-top: 80px;
-}
-
-/* Buttons */
-.btn {
-display: inline-block;
-margin: 20px;
-padding: 15px 30px;
-font-size: 18px;
+.navbar a {
 color: white;
-background: rgba(0,0,0,0.6);
-border-radius: 30px;
 text-decoration: none;
-transition: 0.3s;
 }
 
-.btn:hover {
-background: white;
-color: black;
-transform: scale(1.1);
-}
-/* Glass Cards */
-.card {
-background: rgba(255, 255, 255, 0.1);
-border-radius: 20px;
-padding: 30px;
-margin: 20px;
-backdrop-filter: blur(10px);
-box-shadow: 0 0 20px rgba(0,0,0,0.3);
-animation: float 4s ease-in-out infinite;
-}
-
-/* Floating animation */
-@keyframes float {
-0% { transform: translateY(0px); }
-50% { transform: translateY(-15px); }
-100% { transform: translateY(0px); }
-}
-
-/* Neon Button */
-.btn {
-display: inline-block;
-margin-top: 15px;
-padding: 12px 25px;
-color: white;
-background: #ff0055;
-border-radius: 30px;
-text-decoration: none;
-box-shadow: 0 0 15px #ff0055;
-transition: 0.3s;
-}
-
-.btn:hover {
+.nav-btn {
 background: #00f7ff;
-box-shadow: 0 0 20px #00f7ff;
-transform: scale(1.1);
+padding: 10px 20px;
+border-radius: 20px;
+color: black;
 }
 
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+top: 40%;
+transform: translateY(-40%);
+}
+
+.hero h1 {
+font-size: 60px;
+}
+
+.hero span {
+color: #00f7ff;
+}
+
+.btn-primary {
+background: #00f7ff;
+padding: 15px 30px;
+border-radius: 30px;
+margin: 10px;
+text-decoration: none;
+color: black;
+display: inline-block;
+}
+
+.btn-outline {
+border: 2px solid #00f7ff;
+padding: 15px 30px;
+border-radius: 30px;
+margin: 10px;
+color: white;
+text-decoration: none;
+display: inline-block;
+}
+
+/* DOWNLOAD SECTION */
+.download-section {
+padding: 100px 20px;
+text-align: center;
+}
+
+.download-cards {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+}
+
+.download-card {
+background: rgba(255,255,255,0.05);
+padding: 40px;
+border-radius: 20px;
+}
