@@ -1,15 +1,18 @@
-.channels img{
-width:100px;
-margin:10px;
-cursor:pointer;
-border-radius:10px;
-transition:0.3s;
-}
-.channels img:hover{
-transform:scale(1.1);
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #111;
+  color: white;
+  text-align: center;
 }
 
-iframe{
-border-radius:15px;
-box-shadow:0 0 20px rgba(255,0,0,0.4);
+header {
+  background: red;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
 }
