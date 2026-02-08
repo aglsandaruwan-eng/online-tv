@@ -1,55 +1,4 @@
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #111;
-  color: #fff;
-}
-
-header {
-  background: #e50914;
-  padding: 15px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.content {
-  padding: 20px;
-}
-
-iframe {
-  width: 100%;
-  height: 450px;
-  margin-bottom: 20px;
-}
-
-footer {
-  background: #000;
-  text-align: center;
-  padding: 10px;
-}
-.channels img{
-width:100px;
-margin:10px;
-cursor:pointer;
-border-radius:10px;
-transition:0.3s;
-}
-.channels img:hover{
-transform:scale(1.1);
-}
-
-iframe{
-border-radius:15px;
-box-shadow:0 0 20px rgba(255,0,0,0.4);
-}
-/* Background Gradient Animation */
-body {
 margin: 0;
 font-family: Arial, sans-serif;
 color: white;
@@ -57,6 +6,7 @@ text-align: center;
 overflow-x: hidden;
 }
 
+/* Animated Background */
 .bg-animation {
 position: fixed;
 width: 100%;
@@ -64,7 +14,7 @@ height: 100%;
 z-index: -1;
 background: linear-gradient(-45deg, #ff0000, #ff7300, #ff00c8, #0066ff);
 background-size: 400% 400%;
-animation: gradientBG 10s ease infinite;
+animation: gradientBG 8s ease infinite;
 }
 
 @keyframes gradientBG {
@@ -73,15 +23,15 @@ animation: gradientBG 10s ease infinite;
 100% {background-position: 0% 50%;}
 }
 
-/* Container */
-.home-container {
-margin-top: 100px;
-}
-
 /* Logo */
 .logo {
-font-size: 32px;
-margin-top: 30px;
+margin-top: 40px;
+font-size: 35px;
+}
+
+/* Container */
+.home-container {
+margin-top: 80px;
 }
 
 /* Buttons */
@@ -102,5 +52,3 @@ background: white;
 color: black;
 transform: scale(1.1);
 }
-
-
