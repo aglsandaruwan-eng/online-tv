@@ -1,18 +1,50 @@
-<h2>Cricket Live</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cricket Live</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-<button onclick="changeMatch('UCq-Fj5jknLsUf-MWSy4_brA')">Match 1</button>
-<button onclick="changeMatch('UC9k-_g7fZLZ1C8fXl5nVgAA')">Match 2</button>
+<body>
 
-<br><br>
+<header>
+<h1>🏏 Cricket Live</h1>
+<a href="index.html">Home</a> |
+<a href="tv.html">Live TV</a>
+</header>
 
-<iframe id="cricketPlayer" width="100%" height="400"
+<h2>Live Cricket Match</h2>
+
+<iframe width="100%" height="400"
 src="https://www.youtube.com/embed/live_stream?channel=UCq-Fj5jknLsUf-MWSy4_brA"
 allowfullscreen>
 </iframe>
 
-<script>
-function changeMatch(channelId) {
-document.getElementById("cricketPlayer").src =
-"https://www.youtube.com/embed/live_stream?channel=" + channelId;
-}
-</script>
+<br><br>
+
+<h3>Match Schedule</h3>
+
+<table border="1" width="100%">
+<tr>
+<th>Match</th>
+<th>Date</th>
+<th>Time</th>
+</tr>
+
+<tr>
+<td>SL vs IND</td>
+<td>15 Feb 2026</td>
+<td>7:00 PM</td>
+</tr>
+
+<tr>
+<td>AUS vs ENG</td>
+<td>17 Feb 2026</td>
+<td>6:30 PM</td>
+</tr>
+
+</table>
+
+</body>
+</html>
