@@ -100,6 +100,26 @@ style="background-image:url('https://images.unsplash.com/photo-1511512578047-dfb
 
 </section>
 <!-- DOWNLOAD SECTION END -->
+  <!-- MOVIE POPUP -->
+<div id="movieModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImg">
+    <h2 id="modalTitle"></h2>
+  </div>
+</div>
+
+<script>
+function openMovie(img, title){
+  document.getElementById("modalImg").src = img;
+  document.getElementById("modalTitle").innerText = title;
+  document.getElementById("movieModal").style.display = "flex";
+}
+
+function closeModal(){
+  document.getElementById("movieModal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
