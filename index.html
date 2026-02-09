@@ -199,10 +199,12 @@ Close
   </div>
 
 <script>
+<script>
 function openVideo(url,title){
   document.getElementById("popup").style.display="flex";
   document.getElementById("vplayer").src=url;
   document.getElementById("vtitle").innerText=title;
+  document.getElementById("dlink").href=url;
 }
 
 function closeVideo(){
@@ -210,6 +212,7 @@ function closeVideo(){
   document.getElementById("vplayer").pause();
 }
 </script>
+
 
 </body>
 </html>
