@@ -10,22 +10,26 @@
 <h1 class="logo">MYFLIX</h1>
 </header>
 
-<div class="video-page">
-<iframe id="player" width="80%" height="500"
+<section class="video-page">
+<iframe id="player"
 frameborder="0"
 allow="autoplay"
 allowfullscreen>
 </iframe>
 
+<h2 id="vtitle"></h2>
+</section>
+
 <script>
-const urlParams = new URLSearchParams(window.location.search);
-const videoId = urlParams.get('id');
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+const title = params.get("title");
 
 document.getElementById("player").src =
-"https://www.youtube.com/embed/" + videoId + "?autoplay=1&mute=1";
-</script>
+"https://www.youtube.com/embed/"+id+"?autoplay=1&mute=1";
 
+document.getElementById("vtitle").innerText = title;
+</script>
 
 </body>
 </html>
-
