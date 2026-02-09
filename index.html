@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Video Hub</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Movie Site</title>
 
 <style>
 body{
   margin:0;
   font-family:Arial;
   color:white;
-  background:linear-gradient(-45deg,#0f172a,#020617,#1e293b,#020617);
+  background:linear-gradient(-45deg,#020617,#111827,#020617,#000);
   background-size:400% 400%;
-  animation:bgMove 12s ease infinite;
+  animation:bg 15s ease infinite;
 }
-  .hero{
+
+@keyframes bg{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:#000;
+}
+
+header a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+.hero{
   text-align:center;
-  padding:80px 20px;
+  padding:100px 20px;
 }
 
 .hero h1{
@@ -30,66 +50,11 @@ body{
   border-radius:6px;
 }
 
-
-@keyframes bgMove{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
-}
-
-
-header{
-<section class="hero">
-  <h1>Watch Movies & Live TV</h1>
-  <p>Stream movies, series and sports live</p>
-  <a href="movies.html" class="btn">Watch Now</a>
-</section>
-
-nav a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-}
-
-.hero{
-  height:400px;
-  background:url('banner.jpg') center/cover;
-  display:flex;
-  align-items:center;
-  padding-left:40px;
-}
-
-.hero button{
-  padding:10px 20px;
-  background:red;
-  border:none;
-  color:white;
-}
-
 .section-title{
-  margin:30px 40px;
+  margin-left:20px;
 }
 
 .movie-row{
-  display:flex;
-  gap:15px;
-  padding:0 40px;
-}
-
-.movie-card{
-  transition:0.3s;
-  cursor:pointer;
-}
-
-.movie-card:hover{
-  transform:scale(1.1);
-}
-
-.movie-card img{
-  width:180px;
-  border-radius:8px;
-}
-  .movie-row{
   display:flex;
   overflow-x:auto;
   gap:15px;
@@ -104,79 +69,69 @@ nav a{
   min-width:180px;
   text-decoration:none;
   color:white;
+  transition:0.3s;
+}
+
+.movie-card:hover{
+  transform:scale(1.1);
 }
 
 .movie-card img{
   width:180px;
   border-radius:8px;
 }
-
 </style>
-
 </head>
-  
+
 <body>
 
 <header>
-  <div class="logo">🎬 MyCinema</div>
-  <nav>
+  <div><b>🎬 MyCinema</b></div>
+  <div>
     <a href="#">Home</a>
     <a href="#">Movies</a>
-    <a href="#">Series</a>
-    <a href="#">Live</a>
-  </nav>
+    <a href="#">Live TV</a>
+  </div>
 </header>
 
 <section class="hero">
-  <div class="hero-text">
-    <h1>Watch Movies Online</h1>
-    <p>Stream & Download your favorite movies.</p>
-    <button>Watch Now</button>
-  </div>
+  <h1>Watch Movies Online</h1>
+  <p>Stream & Download Anytime</p>
+  <a href="#" class="btn">Watch Now</a>
 </section>
 
-<h2 class="section-title">Popular Movies</h2>
-
-<a href="movie1.html" class="movie-card">
-  <img src="thumb1.jpg">
-  <p>Movie 1</p>
-</a>
-
- <a href="movie1.html" class="movie-card">
-  <img src="thumb1.jpg">
-  <p>Movie 1</p>
-</a>
-
-
- <a href="movie1.html" class="movie-card">
-  <img src="thumb1.jpg">
-  <p>Movie 1</p>
-</a>
-<h2 class="section-title">Trending Movies</h2>
+<h2 class="section-title">🔥 Trending</h2>
 
 <div class="movie-row">
+  <a href="movie1.html" class="movie-card">
+    <img src="thumb.jpg">
+    <p>Movie One</p>
+  </a>
 
   <a href="movie1.html" class="movie-card">
-    <img src="thumb1.jpg">
-    <p>Movie 1</p>
+    <img src="thumb.jpg">
+    <p>Movie Two</p>
   </a>
 
-  <a href="movie2.html" class="movie-card">
-    <img src="thumb2.jpg">
-    <p>Movie 2</p>
+  <a href="movie1.html" class="movie-card">
+    <img src="thumb.jpg">
+    <p>Movie Three</p>
   </a>
-
-  <a href="movie3.html" class="movie-card">
-    <img src="thumb3.jpg">
-    <p>Movie 3</p>
-  </a>
-
 </div>
 
+<h2 class="section-title">🎬 Latest Movies</h2>
 
-</body>
+<div class="movie-row">
+  <a href="movie1.html" class="movie-card">
+    <img src="thumb.jpg">
+    <p>New Movie</p>
+  </a>
 
-
+  <a href="movie1.html" class="movie-card">
+    <img src="thumb.jpg">
+    <p>Action Movie</p>
+  </a>
+</div>
 
 </body>
 </html>
