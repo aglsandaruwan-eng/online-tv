@@ -121,7 +121,7 @@ margin:30px;
 background:rgba(255,255,255,0.08);
 backdrop-filter:blur(15px);
 border-radius:25px;
-box-shadow:0 0 30px rgba(0,255,255,0.15),0 0 40px rgba(255,0,255,0.1);
+box-shadow:0 0 30px rgba(0,255,255,0.15),0 0 40px rgba(255, 255, 255, 0.1);
 }
 
 
@@ -567,7 +567,7 @@ font-size:80px;
 letter-spacing:8px;
 margin:0;
 font-weight:800;
-background:linear-gradient(90deg,#00ffe7,#ff00ff,#00ff88,#ff5500);
+background:linear-gradient(90deg,#00ffe7,#643264,#00ff88,#ff5500);
 background-size:300% 300%;
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
@@ -597,4 +597,34 @@ letter-spacing:4px;
 .site-tagline{
 font-size:12px;
 }
+}
+.video-page{
+text-align:center;
+padding:80px 20px;
+color:rgb(0, 0, 0);
+}
+
+.detail-poster{
+width:280px;
+border-radius:15px;
+}
+
+.desc{
+max-width:600px;
+margin:20px auto;
+color: #050505;
+}
+
+.download-btn{
+display:inline-block;
+padding:12px 25px;
+background:lime;
+color:black;
+font-weight:bold;
+border-radius:10px;
+text-decoration:none;
+}
+
+.back-btn{
+color:cyan;
 }
