@@ -1,81 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Houny Base</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+<title>My Video Site</title>
 
 <style>
 body{
   margin:0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f0c29,#302b63,#24243e);
   color:white;
 }
 
-.container{
+/* TOP NAV BAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.menu a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:15px;
+}
+
+.menu a:hover{
+  color:#00eaff;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+}
+
+.hero h1{
+  font-size:42px;
+}
+
+.hero p{
+  opacity:0.8;
+}
+
+/* VIDEO GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
   padding:40px;
 }
 
-h1{
-  text-align:center;
-  margin-bottom:30px;
-}
-
-.video-grid{
-  display:grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-}
-
-.video-card{
+.card{
   background:#111;
-  border-radius:12px;
+  border-radius:15px;
   overflow:hidden;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-  cursor:pointer;
-  transition:transform 0.3s;
+  box-shadow:0 15px 40px rgba(0,0,0,0.5);
+  transition:0.3s;
 }
 
-.video-card:hover{
+.card:hover{
   transform:scale(1.05);
 }
 
-.video-card img{
+.card img{
   width:100%;
   height:140px;
   object-fit:cover;
 }
 
-.video-card h3{
-  padding:10px;
+.card h3{
+  padding:15px;
   font-size:16px;
 }
 </style>
+</head>
 
-<div class="container">
-  <h1>🎬 My Video Collection</h1>
+<body>
 
-  <div class="video-grid">
-
-    <!-- VIDEO 1 -->
-    <div class="video-card" onclick="location.href='video1.html'">
-      <img src="movie1.jpg">
-      <h3>Movie 1</h3>
-    </div>
-
-    <!-- VIDEO 2 -->
-    <div class="video-card" onclick="location.href='video2.html'">
-      <img src="thumbnail2.jpg">
-      <h3>Movie 2</h3>
-    </div>
-
+<!-- TOP BAR -->
+<div class="navbar">
+  <div class="logo">🎬 MySite</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">Live</a>
+    <a href="#">Contact</a>
   </div>
 </div>
 
+<!-- HERO -->
+<div class="hero">
+  <h1>Welcome to My Video World</h1>
+  <p>Watch & download high quality videos</p>
+</div>
+
+<!-- VIDEO LIST -->
+<div class="grid">
+
+  <div class="card">
+    <img src="thumb.jpg">
+    <h3>Movie One</h3>
+  </div>
+
+  <div class="card">
+    <img src="thumb.jpg">
+    <h3>Movie Two</h3>
+  </div>
+
+</div>
 
 </body>
 </html>
