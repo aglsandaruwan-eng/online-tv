@@ -59,6 +59,30 @@
 <img src="https://image.tmdb.org/t/p/w300/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg">
 </div>
 </section>
+<!-- Video Modal -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <iframe id="videoFrame" width="100%" height="400"
+      src=""
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openModal(videoId){
+  document.getElementById("videoModal").style.display = "flex";
+  document.getElementById("videoFrame").src =
+    "https://www.youtube.com/embed/" + videoId;
+}
+
+function closeModal(){
+  document.getElementById("videoModal").style.display = "none";
+  document.getElementById("videoFrame").src = "";
+}
+</script>
 
 </body>
 </html>
