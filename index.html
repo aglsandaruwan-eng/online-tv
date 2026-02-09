@@ -8,9 +8,18 @@
 body{
   margin:0;
   font-family:Arial;
-  background:#0b0c10;
   color:white;
+  background:linear-gradient(-45deg,#0f172a,#020617,#1e293b,#020617);
+  background-size:400% 400%;
+  animation:bgMove 12s ease infinite;
 }
+
+@keyframes bgMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
 
 header{
   display:flex;
