@@ -628,3 +628,155 @@ text-decoration:none;
 .back-btn{
 color:cyan;
 }
+body{
+background:linear-gradient(120deg,#0a0015,#001a2a);
+color:white;
+font-family:sans-serif;
+}
+
+.detail-container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.movie-card-glass{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:30px;
+max-width:900px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(0,255,255,0.2);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.detail-poster{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,0,255,0.4);
+}
+
+.genre{
+color:#ff00ff;
+letter-spacing:2px;
+}
+
+.desc{
+line-height:1.6;
+color:#ddd;
+}
+
+.btn-row{
+margin-top:20px;
+display:flex;
+gap:15px;
+}
+
+.download-btn{
+padding:12px 22px;
+background:linear-gradient(90deg,#00ffcc,#00ff88);
+color:black;
+font-weight:bold;
+border-radius:12px;
+text-decoration:none;
+box-shadow:0 0 15px rgba(0,255,255,0.6);
+}
+
+.back-btn{
+padding:12px 22px;
+background:rgba(255,255,255,0.1);
+color:white;
+border-radius:12px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.movie-card-glass{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.btn-row{
+justify-content:center;
+}
+}
+body{
+background:linear-gradient(120deg,#0a0015,#001a2a);
+color:white;
+font-family:sans-serif;
+}
+
+.detail-container{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+}
+
+.movie-card-glass{
+display:grid;
+grid-template-columns:300px 1fr;
+gap:30px;
+max-width:900px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(20px);
+padding:30px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(0,255,255,0.2);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.detail-poster{
+width:100%;
+border-radius:15px;
+box-shadow:0 0 20px rgba(255,0,255,0.4);
+}
+
+.genre{
+color:#ff00ff;
+letter-spacing:2px;
+}
+
+.desc{
+line-height:1.6;
+color:#ddd;
+}
+
+.btn-row{
+margin-top:20px;
+display:flex;
+gap:15px;
+}
+
+.download-btn{
+padding:12px 22px;
+background:linear-gradient(90deg,#00ffcc,#00ff88);
+color:black;
+font-weight:bold;
+border-radius:12px;
+text-decoration:none;
+box-shadow:0 0 15px rgba(0,255,255,0.6);
+}
+
+.back-btn{
+padding:12px 22px;
+background:rgba(255,255,255,0.1);
+color:white;
+border-radius:12px;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+.movie-card-glass{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.btn-row{
+justify-content:center;
+}
+}
