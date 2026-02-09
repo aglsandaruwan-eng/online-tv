@@ -1,137 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Movie Site</title>
-
-<style>
-body{
-  margin:0;
-  font-family:Arial;
-  color:white;
-  background:linear-gradient(-45deg,#020617,#111827,#020617,#000);
-  background-size:400% 400%;
-  animation:bg 15s ease infinite;
-}
-
-@keyframes bg{
-  0%{background-position:0% 50%;}
-  50%{background-position:100% 50%;}
-  100%{background-position:0% 50%;}
-}
-
-header{
-  display:flex;
-  justify-content:space-between;
-  padding:15px 40px;
-  background:#000;
-}
-
-header a{
-  color:white;
-  margin-left:20px;
-  text-decoration:none;
-}
-
-.hero{
-  text-align:center;
-  padding:100px 20px;
-}
-
-.hero h1{
-  font-size:48px;
-}
-
-.btn{
-  background:red;
-  padding:12px 20px;
-  color:white;
-  text-decoration:none;
-  border-radius:6px;
-}
-
-.section-title{
-  margin-left:20px;
-}
-
-.movie-row{
-  display:flex;
-  overflow-x:auto;
-  gap:15px;
-  padding:20px;
-}
-
-.movie-row::-webkit-scrollbar{
-  display:none;
-}
-
-.movie-card{
-  min-width:180px;
-  text-decoration:none;
-  color:white;
-  transition:0.3s;
-}
-
-.movie-card:hover{
-  transform:scale(1.1);
-}
-
-.movie-card img{
-  width:180px;
-  border-radius:8px;
-}
-</style>
+<title>MyFlix</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <div><b>🎬 MyCinema</b></div>
-  <div>
-    <a href="#">Home</a>
-    <a href="#">Movies</a>
-    <a href="#">Live TV</a>
-  </div>
+<h1 class="logo">MYFLIX</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Movies</a>
+<a href="#">Series</a>
+</nav>
 </header>
 
 <section class="hero">
-  <h1>Watch Movies Online</h1>
-  <p>Stream & Download Anytime</p>
-  <a href="#" class="btn">Watch Now</a>
+<h2>Rampage</h2>
+<p>Action Movie Streaming Platform</p>
+<button>Watch Now</button>
 </section>
 
-<h2 class="section-title">🔥 Trending</h2>
+<section class="movies">
+<h2>Trending Now</h2>
 
 <div class="movie-row">
-  <a href="movie1.html" class="movie-card">
-    <img src="thumb.jpg">
-    <p>Movie One</p>
-  </a>
-
-  <a href="movie1.html" class="movie-card">
-    <img src="thumb.jpg">
-    <p>Movie Two</p>
-  </a>
-
-  <a href="movie1.html" class="movie-card">
-    <img src="thumb.jpg">
-    <p>Movie Three</p>
-  </a>
+<img src="https://image.tmdb.org/t/p/w300/9O1Iy9od7Kz6G3z8pZzXG2V8L5V.jpg">
+<img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+<img src="https://image.tmdb.org/t/p/w300/5PfJsFIMv7Hq7n8oT2dYb8uG1Gz.jpg">
+<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
 </div>
 
-<h2 class="section-title">🎬 Latest Movies</h2>
-
-<div class="movie-row">
-  <a href="movie1.html" class="movie-card">
-    <img src="thumb.jpg">
-    <p>New Movie</p>
-  </a>
-
-  <a href="movie1.html" class="movie-card">
-    <img src="thumb.jpg">
-    <p>Action Movie</p>
-  </a>
-</div>
+</section>
 
 </body>
 </html>
