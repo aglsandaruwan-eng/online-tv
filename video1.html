@@ -1,5 +1,31 @@
-<h2>Movie One</h2>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Watch Video</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<video width="100%" controls>
-  <source src="https://res.cloudinary.com/djlvn8zot/video/upload/v1770613202/240p.h264_jfs47i.mp4" type="video/mp4">
-</video>
+<header>
+<h1 class="logo">MYFLIX</h1>
+</header>
+
+<div class="video-page">
+<iframe id="player" width="80%" height="500"
+frameborder="0"
+allow="autoplay"
+allowfullscreen>
+</iframe>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const videoId = urlParams.get('id');
+
+document.getElementById("player").src =
+"https://www.youtube.com/embed/" + videoId + "?autoplay=1&mute=1";
+</script>
+
+
+</body>
+</html>
+
