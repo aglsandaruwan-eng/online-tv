@@ -1,154 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Streaming</title>
+<title>Houny Base</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HERO SECTION START -->
-<section class="hero">
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg,#0f2027,#203a43,#2c5364);
+  color:white;
+}
 
-<nav class="navbar">
-<div class="logo">🔥 MY STREAM</div>
+.container{
+  padding:40px;
+}
 
-<ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">TV</a></li>
-<li><a href="#">Cricket</a></li>
-<li><a href="#download">Download</a></li>
-</ul>
+h1{
+  text-align:center;
+  margin-bottom:30px;
+}
 
-<a href="tv.html" class="nav-btn">PLAY NOW</a>
-</nav>
+.video-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
 
-<div class="hero-content">
-<h1>THE NEXT<br><span>GENERATION</span></h1>
-<p>Ultimate Live Streaming Experience</p>
+.video-card{
+  background:#111;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  cursor:pointer;
+  transition:transform 0.3s;
+}
 
-<a href="tv.html" class="btn-primary">PLAY NOW</a>
-<a href="#download" class="btn-outline">EXPLORE MORE</a>
-</div>
+.video-card:hover{
+  transform:scale(1.05);
+}
 
-</section>
-<!-- HERO SECTION END -->
-  <!-- FEATURED SECTION START -->
-<section class="featured">
+.video-card img{
+  width:100%;
+  height:140px;
+  object-fit:cover;
+}
 
-<h2>🎬 Watch Video</h2>
+.video-card h3{
+  padding:10px;
+  font-size:16px;
+}
+</style>
 
-<video width="100%" height="450" controls>
-  <source src="https://res.cloudinary.com/djlvn8zot/video/upload/v1770613202/240p.h264_jfs47i.mp4" type="video/mp4">
-  Your browser does not support video.
-</video>
-<h2>🎬 Watch Video</h2>
+<div class="container">
+  <h1>🎬 My Video Collection</h1>
 
-<video width="100%" height="450" controls>
-  <source src="https://res.cloudinary.com/djlvn8zot/video/upload/v1770614447/240p.h264_1_ksjjta.mp4">
-  Your browser does not support video.
-</video>
-<br><br>
+  <div class="video-grid">
 
-<a href="https://res.cloudinary.com/hasal/video/upload/v123456/movie.mp4" download class="btn-primary">
-Download Video
-</a>
+    <!-- VIDEO 1 -->
+    <div class="video-card" onclick="location.href='video1.html'">
+      <img src="thumbnail1.jpg">
+      <h3>Movie 1</h3>
+    </div>
 
-<br><br>
+    <!-- VIDEO 2 -->
+    <div class="video-card" onclick="location.href='video2.html'">
+      <img src="thumbnail2.jpg">
+      <h3>Movie 2</h3>
+    </div>
 
-<a href="https://res.cloudinary.com/djlvn8zot/video/upload/v1770613202/240p.h264_jfs47i.mp4" download class="btn-primary">
-Download Video
-</a>
-<div class="slider">
-
-<div class="slide"
-style="background-image:url('https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2070')">
-<h3>Live Cricket</h3>
-</div>
-
-</div>
-
-</section>
-  
-<!-- FEATURED SECTION END -->
-  <!-- MOVIES SECTION START -->
-<section class="movies">
-
-
-<br><br>
-
-<a href="https://res.cloudinary.com/hasal/video/upload/v123456/movie.mp4" download class="btn-primary">
-Download Video
-</a>
-<div class="movie-grid">
-
-<div class="movie-card"
-onclick="openMovie(
-'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=600',
-'Action Film')">
-
-<img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=600">
-<h3>Action Film</h3>
-</div>
-
-<div class="movie-card">
-<img src="https://images.unsplash.com/photo-1517602302552-471fe67acf66?q=80&w=600">
-<h3>Drama Film</h3>
-</div>
-
-<div class="movie-card">
-<img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=600">
-<h3>Sci-Fi Film</h3>
-</div>
-
-</div>
-
-</section>
-<!-- MOVIES SECTION END -->
-
-<!-- DOWNLOAD SECTION START -->
-<section id="download" class="download-section">
-
-<h2>Download Files</h2>
-<p>Get Latest App Version</p>
-
-<div class="download-cards">
-
-<div class="download-card">
-<h3>Android App</h3>
-<a href="files/app.apk" download class="btn-primary">Download APK</a>
-</div>
-
-<div class="download-card">
-<h3>Match Schedule PDF</h3>
-<a href="files/schedule.pdf" download class="btn-primary">Download PDF</a>
-</div>
-
-</div>
-
-</section>
-<!-- DOWNLOAD SECTION END -->
-  <!-- MOVIE POPUP -->
-<div id="movieModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal()">×</span>
-    <img id="modalImg">
-    <h2 id="modalTitle"></h2>
   </div>
 </div>
 
-<script>
-function openMovie(img, title){
-  document.getElementById("modalImg").src = img;
-  document.getElementById("modalTitle").innerText = title;
-  document.getElementById("movieModal").style.display = "flex";
-}
-
-function closeModal(){
-  document.getElementById("movieModal").style.display = "none";
-}
-</script>
 
 </body>
 </html>
