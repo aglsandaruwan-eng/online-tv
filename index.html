@@ -1,143 +1,38 @@
-body{
-margin:0;
-background:linear-gradient(to bottom,#000000,#111111,#000000);
-color:white;
-font-family:'Poppins',sans-serif;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyFlix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+<h1 class="logo">MYFLIX</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Movies</a>
+<a href="#">Series</a>
+</nav>
+</header>
 
-header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 40px;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
-position:sticky;
-top:0;
-z-index:1000;
-}
+<section class="hero">
+<h2>Rampage</h2>
+<p>Action Movie Streaming Platform</p>
+<button>Watch Now</button>
+</section>
 
+<section class="movies">
+<h2>Trending Now</h2>
 
-.logo{
-color:red;
-}
+<div class="movie-row">
+<img src="https://image.tmdb.org/t/p/w300/9O1Iy9od7Kz6G3z8pZzXG2V8L5V.jpg">
+<img src="https://image.tmdb.org/t/p/w300/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg">
+<img src="https://image.tmdb.org/t/p/w300/5PfJsFIMv7Hq7n8oT2dYb8uG1Gz.jpg">
+<img src="https://image.tmdb.org/t/p/w300/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg">
+</div>
 
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-}
+</section>
 
-.hero{
-height:500px;
-background:url('https://image.tmdb.org/t/p/original/3CXzM5B5bWmKf0cY4F8cW8LxM7g.jpg');
-background-size:cover;
-background-position:center;
-display:flex;
-flex-direction:column;
-justify-content:center;
-padding:60px;
-position:relative;
-}
+</body>
+</html>
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(8px);
-}
-
-
-.hero h2{
-font-size:50px;
-}
-
-.hero button{
-padding:12px 30px;
-background:linear-gradient(45deg, red, darkred);
-color:white;
-border:none;
-border-radius:30px;
-cursor:pointer;
-font-size:16px;
-transition:0.3s;
-}
-
-.hero button:hover{
-transform:scale(1.1);
-box-shadow:0 0 15px red;
-}
-
-
-.movies{
-padding:20px;
-}
-
-.movie-row{
-display:flex;
-gap:15px;
-overflow-x:auto;
-}
-
-.movie-row img{
-width:200px;
-border-radius:10px;
-transition:0.3s;
-}
-
-.movie-row img:hover{
-transform:scale(1.1);
-}
-.modal{
-display:none;
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.8);
-justify-content:center;
-align-items:center;
-}
-
-.modal-content{
-background:#111;
-padding:20px;
-border-radius:10px;
-width:70%;
-position:relative;
-}
-
-.close{
-position:absolute;
-top:10px;
-right:20px;
-font-size:30px;
-cursor:pointer;
-color:white;
-}
-.movie-row img{
-width:200px;
-border-radius:15px;
-transition:0.3s;
-cursor:pointer;
-box-shadow:0 8px 20px rgba(0,0,0,0.5);
-}
-
-.movie-row img:hover{
-transform:scale(1.1);
-box-shadow:0 12px 25px rgba(255,0,0,0.6);
-}
-
-.movies{
-padding:30px;
-background:rgba(255,255,255,0.05);
-backdrop-filter:blur(10px);
-border-radius:20px;
-margin:20px;
-}
