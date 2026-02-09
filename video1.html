@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Watch Video</title>
+<title>Movie 1</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-<h1 class="logo">MYFLIX</h1>
-</header>
+<div class="video-page">
 
-<section class="video-page">
-<iframe id="player"
-frameborder="0"
-allow="autoplay"
-allowfullscreen>
-</iframe>
+<h1>🔥 Batman 2004 Season 01</h1>
 
-<h2 id="vtitle"></h2>
-</section>
+<img src="https://i.postimg.cc/3x8Jn57g/MV5BZGRk-YTky-OGQt-ZDVl-Yy00Zjhj-LTk5Yj-Mt-Nzgx-MWUx-ZTk1ZWZk-Xk-Ey-Xk-Fqc-Gc-V1.jpg" class="detail-poster">
 
-<script>
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
-const title = params.get("title");
+<p class="desc">
+About
+7.4/10 · IMDb
+86% liked this TV show
+Google users
+This animated adventure series of Bruce Wayne -- billionaire by day, crime fighter by night -- starts as Wayne balances life as a free-wheeling bachelor with his role as the Caped Crusader. He's joined on occasion by Robin and Batgirl. Black Mask, Killer Moth, the Everywhere Man and a brand-new Clay… MORE
+No. of episodes: 65 (list of episodes)
+No. of seasons: 5
+Networks: Cartoon Network, Kids' WB, The CW, The WB
+First episode date: 11 September 2004 (USA)
+Based on: Batman; by: Bob Kane; Bill Finger (uncredited)
+Action movie | 2024 | HD
+</p>
 
-document.getElementById("player").src =
-"https://www.youtube.com/embed/"+id+"?autoplay=1&mute=1";
+<a href="https://drive.google.com/drive/folders/1LoIzebLHri3eZL7X_vCi74YSOTJIreQ5?usp=sharing" download class="download-btn">
+📥 Download Movie 1
+</a>
 
-document.getElementById("vtitle").innerText = title;
-</script>
+<br><br>
+<a href="index.html" class="back-btn">⬅ Back to Home</a>
+
+</div>
 
 </body>
 </html>
